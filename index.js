@@ -87,6 +87,6 @@ app.get('/v1/dogs',(req,res ) =>{
 
 const PORT = 8080;
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT || PORT, () => {
   console.log("server is running....");
 });
